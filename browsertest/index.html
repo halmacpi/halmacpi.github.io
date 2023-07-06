@@ -1,0 +1,32 @@
+<style>
+.a,.b,.d,.d span {display:inline-block;width:48;height:48}
+.b,.d span {background:green}
+.a {background:red;position:absolute}
+.b {zoom:48000;width:.001;height:.001;position:relative}
+.d span {float:right}
+#e {left:112.5}
+#e,#f {z-index:-1}
+</style>
+
+<h1>Browser rendering test</h1>
+
+<div>
+<div class="a"></div>
+<div class="b"></div>
+<div class="a" id="e"></div>
+<div class="d">
+<div class="d">
+<span></span>
+<div class="a" id="f"></div>
+</div>
+</div>
+
+<div class="a"></div>
+<div class="b"></div>
+
+<small>✓</small>
+
+<hr>
+If you see three red squares, and you don't see a checkmark, you are using Firefox (Gecko).
+<br>
+All other browsers show three green squares and a checkmark.
