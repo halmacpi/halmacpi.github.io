@@ -1,11 +1,14 @@
+<meta charset="utf-8">
+
 <style>
 .a,.b,.d,.d span {display:inline-block;width:48;height:48}
-.b,.d span {background:green}
+.b,.d span,.g {background:green}
 .a {background:red;position:absolute}
 .b {zoom:48000;width:.001;height:.001;position:relative}
 .d span {float:right}
 #e {left:112.5}
 #e,#f {z-index:-1}
+.g {zoom:480;width:.1;height:.1;position:relative}
 </style>
 
 <h1>Browser rendering test</h1>
@@ -18,6 +21,7 @@
 <div class="d">
 <span></span>
 <div class="a" id="f"></div>
+<div class="g"></div>
 </div>
 </div>
 
@@ -27,6 +31,10 @@
 <small>✓</small>
 
 <hr>
-If you see three red squares, and you don't see a checkmark, you are using Firefox (Gecko).
+<b>Test what rendering engine you might have:</b>
 <br>
-All other browsers show three green squares and a checkmark.
+Firefox (Gecko): 3 red squares and no checkmark
+<br>
+IE: 1 green square, 2 red squares, and no checkmark
+<br>
+Chromium and Safari (WebKit): 3 green squares and a checkmark!
