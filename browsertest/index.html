@@ -11,9 +11,14 @@
 #e {left:112.5}
 #e,#f {z-index:-1}
 .g {zoom:480;width:.1;height:.1;position:relative}
+.z button,.z span {width:40px; height:40px;background:gray;border:none}
+.z,.z span {display:inline-block}
+.z span {float:right}
 </style>
 
-</head><body><h1>Browser rendering test</h1>
+</head>
+<body>
+<h1>Browser rendering test</h1>
 
 <div>
 <div class="a"></div>
@@ -36,6 +41,13 @@
 
 <small>A😊🤢</small>
 
+</div>
+
+<div style="height:32px">
+
+<div>
+<div class="z"><button></button></div>
+<div class="z"><span></span></div>
 </div>
 </body>
 </html>
